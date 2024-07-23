@@ -1,6 +1,14 @@
-<%= link_to 'sign_up', new_post_path %>
+<% if user_signed_in? %> 
+    <%= link_to "Log out", destroy_user_session_path, method: :delete %>
+    <div><%= link_to 'Create Post', new_user_post_path(current_user.id)%></div>
+<% else %>
+    <%= link_to "Sign_up", new_user_session_path %>
+<% end %>
 <% if @posts.any? %>
     <% @posts.each do |post|%>
+        <% if user_signed_in? %>
+        <div><%= current_user.username %></div>
+        <% end %>
         <div> <%=post.title%> </div>
         <div> <%=post.body%> </div>
     <%end%>
