@@ -1,7 +1,13 @@
-<%= form_with model: [current_user, current_user.posts.build] do |form| %>
-    <%= form.label :title, 'Title'%>
-    <%= form.text_field :title%>
-    <%= form.label :body, 'Body' %>
-    <%= form.text_area :body, placeholder: 'text goes hear' %>
-    <%= form.submit  'Create Post' %>
-<% end %>
+<div class="post-form">
+    <%= form_with model: [current_user, current_user.posts.build] do |form| %>
+        <div class="field">
+            <%= form.label :title, 'Title'%>
+            <%= form.text_field :title%>
+        </div>
+        <div class="field">
+            <%= form.label :body, 'Body' %>
+            <%= form.text_area :body, placeholder: 'text goes hear' %>
+        </div>
+        <div class="field"><%= form.submit  'Create Post' %></div>
+    <% end %>
+</div>

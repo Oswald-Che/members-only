@@ -1,0 +1,22 @@
+.post-form form{
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.post-form form .field{
+display: flex;
+flex-direction: column;
+}
+
+.post-form form #post_title{
+    width: 250px;
+}
+
+.post-form form #post_body{
+    height: 100px;
+}
+.post-form form input[type="submit"]{
+    width: 130px;
+}
