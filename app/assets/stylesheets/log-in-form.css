@@ -1,0 +1,76 @@
+body{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-container{
+    box-shadow: 4px 4px 2px 2px rgb(173, 241, 173);
+    border: 1px solid grey;
+    padding: 40px;
+}
+
+.login-container form{
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+   
+}
+
+.login-container #user_email, 
+.login-container #user_password{
+    width: 250px;
+    height: 20px;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid grey;
+    box-shadow: 1px 1px 1px 1px green;
+}
+
+.login-container #user_password:focus, 
+.login-container #user_email:focus{
+    border: 2px solid rgb(151, 224, 151);
+}
+
+.login-container input[type="submit"]{
+    box-sizing: border-box;
+    border: 1px solid grey;
+    border-radius: 8px;
+    font-size: 0.8rem;
+    height: 25px;
+    background-color: rgb(173, 241, 173);
+    width: 80px;
+    text-align: center;
+    padding: 5px;
+}
+
+.login-container input[type="checkbox"]{
+    background: rgb(173, 241, 173);
+    box-shadow: 1px 1px 0.5px green;
+    color: white;
+}
+
+.login-container input[type="checkbox"]:checked{
+    accent-color: rgb(173, 241, 173);
+}
+
+.login-container a{
+    color:rgb(9, 100, 9);
+    text-decoration: none;
+    font-weight: 800;
+}
+
+.login-container a:visited{
+    color: rgb(9, 100, 9);
+}
+
+.login-container h2{
+    margin: 0px;
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}

@@ -1,0 +1,81 @@
+body{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.sign-up-container{
+    box-shadow: 4px 4px 2px 2px rgb(173, 241, 173);
+    border: 1px solid grey;
+    padding: 40px;
+}
+
+.sign-up-container form{
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 10px ;
+}
+
+.sign-up-container #user_email,
+.sign-up-container #user_username,
+.sign-up-container #user_password_confirmation,
+.sign-up-container #user_password{
+    width: 250px;
+    height: 20px;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid grey;
+    box-shadow: 1px 1px 1px 1px green;
+}
+
+.sign-up-container #user_password:focus,
+.sign-up-container #user_username:focus,
+.sign-up-container #user_password_confirmation:focus,
+.sign-up-container #user_email:focus{
+    border: 2px solid rgb(151, 224, 151);
+}
+
+.sign-up-container input[type="submit"]{
+    box-sizing: border-box;
+    border: 1px solid grey;
+    border-radius: 8px;
+    font-size: 0.8rem;
+    height: 25px;
+    background-color: rgb(173, 241, 173);
+    width: 80px;
+    text-align: center;
+    padding: 5px;
+}
+
+.sign-up-container input[type="checkbox"]{
+    background: rgb(173, 241, 173);
+    box-shadow: 1px 1px 0.5px green;
+    color: white;
+}
+
+.sign-up-container input[type="checkbox"]:checked{
+    accent-color: rgb(173, 241, 173);
+}
+
+.sign-up-container a{
+    color:rgb(9, 100, 9);
+    text-decoration: none;
+    font-weight: 800;
+
+}
+
+.sign-up-container a:visited{
+    color: rgb(9, 100, 9);
+}
+
+.sign-up-container h2{
+    margin: 0px;
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
